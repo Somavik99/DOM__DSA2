@@ -534,21 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-violet-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(109 40 217 / var(--tw-bg-opacity));
-}
-
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -556,10 +541,6 @@ video {
 
 .text-\[80px\] {
   font-size: 80px;
-}
-
-.text-\[100px\] {
-  font-size: 100px;
 }
 
 .text-teal-50 {
