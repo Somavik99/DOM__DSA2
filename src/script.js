@@ -38,3 +38,5 @@ function WhileLoop(newArr) {
   return sum;
 }
 console.log(WhileLoop(arr3));
+
+console.log("Avik".split("").reverse().join(""))
