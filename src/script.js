@@ -1,5 +1,5 @@
-const arr1 = [1, 2, 3, 4, 5,2];
-const arr2 = [6, 7, 8, 9, 10,8,9];
+const arr1 = [1, 2, 3, 4, 5, 2];
+const arr2 = [6, 7, 8, 9, 10, 8, 9];
 
 const arr3 = arr1.concat(arr2);
 
@@ -12,29 +12,29 @@ const Filter = arr3
   })
   .reduce((acc, curr) => {
     return acc + curr;
-  },0);
+  }, 0);
 
 console.log(Filter);
 
+function IdenticalRemove(ARR) {
+  let ReducedArr = ARR.reduce(function (acc, currI) {
+    if (!acc.includes(currI)) {
+      acc.push(currI);
+    }
+    return acc;
+  }, []);
+  return ReducedArr;
+}
+console.log(IdenticalRemove(arr3), "<-IdenticalRemovingArr");
+console.log(arr3);
 
-function IdenticalRemove(ARR){
-let ReducedArr = ARR.reduce(function(acc,currI){
-  if(!acc.includes(currI) ){
-        acc.push(currI);
-  }
-  return acc;
-},[]);
-return ReducedArr;
+function WhileLoop(newArr) {
+  let sum = 0;
+  let i = 0;
+  do {
+    sum += newArr[i];
+    i++;
+  } while (i < newArr.length);
+  return sum;
 }
-console.log(IdenticalRemove(arr3) , "<-IdenticalRemovingArr")
-console.log(arr3)
-
-function WhileLoop(newArr){
-let sum = 0;
-let i = 0;
-while(newArr[i]>0){
-sum+=newArr[i];
-}
-return sum
-}
-console.log(WhileLoop(arr3))
+console.log(WhileLoop(arr3));
