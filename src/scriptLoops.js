@@ -17,7 +17,7 @@ function ReverseNum(num) {
   let rev = 0;
   do {
     let rem = num % 10;
-    rev = rev * 10 + rem;
+    rev = rev* 10 + rem;
     num = Math.floor(num / 10);
   } while (num > 0);
   return rev;
@@ -64,7 +64,8 @@ function Frequent(arr) {
   return NewArr;
 }
 
-console.log(Frequent([1, 2, 5, 4, 8, 9, 7, 5, 6, 4, 1, 2, 3, 5]));
+const Array = Frequent([1, 2, 5, 4, 8, 9, 7, 5, 6, 4, 1, 2, 3, 5]);
+console.log(Array)
 
 
 let MainDiv =  document.getElementById('main');
